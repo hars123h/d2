@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap');
+/* font-family: 'Zen Kaku Gothic New', sans-serif; */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: 'Jost', sans-serif;
+  scroll-behavior: smooth;
+  position: relative;
+  max-width: 1350px;
+  
+}
+
+
+html{
+  background-color: white;
+}
+
+
+body {
+  background: linear-gradient(90deg, #FFEEEE 0%, #DDEFBB 100%);
+  overflow-x: hidden;
+
+}
+
+.headText {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 90px;
+  letter-spacing: 0em;
+
+}
+
+
+.boxHead{
+  padding: 10px 24px;
+  background-color: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.boxHead h1{
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.boxHead p{
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+}
+.ffamly {
+  font-family: 'Zen Kaku Gothic New', sans-serif !important;
+
+}
+
+
+.boxIn {
+  padding: 24px;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  border: 2px solid #000000;
+  width: 600px;
+  height: 150px;
+}
+
+.boxIn h1 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 48px;
+  padding-right: 25px;
+}
+
+.boxIn p{
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.boxPort{
+  width: 350px;
+  height: 150px;
+  padding: 16px;
+  background-color: white;
+  color: black;
+  border: 2px solid #000000;
+  display: flex;
+  align-items: flex-end;
+  justify-items:flex-end;
+}
+
+.boxPort .rightIcon{
+  justify-content: end;
+}
+
+tr{
+  margin: 0;
+}
+
+
+@media (min-width:1400px) {
+
+  *{
+    margin: 0 auto;
+  }
+
+.boxInMore{
+  margin-right: 0px;
+}  
+
+.boxPort{
+  margin: 0;
+}
+
+}  
+
+
+@media (max-width:1150px) {
+
+.BoxOut{
+  flex-direction: column;
+  margin-right: 0;
+}
+
+.boxIn{
+  margin-right: 0;
+}
+
+.jupi{
+  display: none;
+} 
+
+
+.darwinAbout{
+  flex-direction: column;
+}
+
+}
+
+@media (max-width:1024px) {
+
+  .darwinAbout{
+    padding: 50px 0;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+
+  .darwinAbout img{
+    width: 400px;
+    margin-bottom: 0;
+  }
+
+  .darwinAboutDATA{
+     width: 400px;
+  }
+
+  .darwinAboutDATA p{
+    margin-left: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .boxHead{
+     width: 500px;
+  }
+
+  .boxIn {
+    padding: 16px;    
+    width: 500px;
+    height: 120px;
+}
+
+}  
+
+@media (max-width:768px) {
+
+  .Port{
+    margin-top: 20px;
+  }
+
+  .Port div{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .PortMR {
+    margin-left: 0;
+  }
+
+  .darwinAbout img{
+    width: 270px;
+  }
+
+  .darwinAboutDATA{
+     width: 270px;
+  }
+
+  .darwinAboutDATA p{
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .PortInside{
+    margin-right: 50px ;
+    margin-left: 50px ;
+  }
+
+.contact{
+  flex-direction: column;
+  align-items: center;
+  gap: 130px;
+}
+
+.boxHead{
+  width: 350px;
+}
+
+.boxIn {   
+ width: 350px;
+ height: 100px;
+ border: 1px solid #000000;
+}
+
+.boxIn h1 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  padding-right: 16px;
+}
+
+.boxIn p {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.boxHead h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.boxHead p {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.mars{
+  display: none;
+}
+
+
+}
+
+@media (max-width:425px) {
+
+  .PortInside{
+    margin-right: 25px ;
+    margin-left: 25px ;
+  }
+
+  .boxPort {
+    width: 240px;
+  }
+
+
+.UpHero{
+  margin-top: 30px;
+}
+
+
+.hero{
+  margin-left: 0px;
+}
+
+.headText {
+  font-size: 48px;
+  line-height: 70px;
+}
+
+.hero a{
+  width: 260px;
+}
+
+.boxHead {
+  padding: 10px ;
+  width: 240px;
+}
+
+.boxHead h1 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.boxHead p {
+  font-size: 9px;
+  line-height: 12px;
+}
+
+.boxIn {   
+ width: 240px;
+ height: 80px;
+ border: 1px solid #000000;
+}
+
+.boxIn h1 {
+  font-size: 20px;
+  line-height: 24px;
+  padding-right: 12px;
+}
+
+.boxIn p {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.contact {  
+  gap: 25px;
+}
+
+.contact input{
+  width: 200px;
+}
+
+.contact label{
+  margin-right: 5px;
+  font-size: 8px;
+}
+
+.ContactHeading{
+  font-size: 48px;
+}
+
+.ContactHide{
+  display: none;
+}
+
+.contact a{
+  width: 240px;
+}
+
+
+}
+.darwinAboutMain {
+  margin-left: -170px;
+  margin-top: -72px;
+}
+.darwinAboutHead {
+  margin-left: -35px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: blue;
+}
+@media only screen and (max-width: 1300px) {
+  .darwinAboutMain {
+    margin-left: -150px;
+  }
+  .darwinAboutHead {
+    margin-left: -30px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .darwinAboutMain {
+    margin-left: 0px;
+   margin-top: 20px;
+
+  }
+  .darwinAboutHead {
+    margin-left: 0px;
+  }
+}
