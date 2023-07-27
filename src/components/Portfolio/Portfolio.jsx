@@ -68,7 +68,7 @@ export default function Portfolio() {
   return (
     <>
       {/* <div className="flex flex-col w-full max-w-7xl  static my-[200px] z-20"> */}
-      <div className={`flex flex-col w-full max-w-7xl  static my-[20px] z-20 ${isOpen ? 'blur-sm' : ''} mx-auto`} id="portfolio">
+      <div className={`flex flex-col w-full max-w-7xl  static my-[20px] z-20 ${isOpen ? 'blur popupAni' : ''} mx-auto`} id="portfolio">
         <div className="mx-[100px] z-10 PortInside">
           <div className=" boxHead  z-10 " data-aos="fade-down">
             <h1 className="mb-5">WHAT WE CREATED</h1>
@@ -250,13 +250,16 @@ export default function Portfolio() {
       {isOpen && (
         // later we will be adding url dynamically- hard coded for now
 
-        <div className={`popup-content rounded-xl`}
+        <div className={setIsOpen?'popup-content rounded-xl popupAni': 'popup-content rounded-xl'}
          >
-            <img src={openedURL} className="popupImg" alt="" />
+          <div className={setIsOpen?' popupeddAni': ''}>
+          <img src={openedURL} className="popupImg" alt="" />
           {/* <div className="popup-content rounded-xl bg-[url('https://res.cloudinary.com/doqgoey64/image/upload/v1689932478/portfolio/111111111111111_i3zdzu.png')] bg-no-repeat bg-center bg-cover"> */}
           <span onClick={() => { setIsOpen(false); setOpenedURL('') }} className="close-icon">
             &times;
           </span>
+          </div>
+            
         </div>
       )}
 
