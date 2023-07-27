@@ -30,3 +30,25 @@
     cursor: pointer;
   }
   
+  @media (max-width:768px) {
+    .popupImg {
+      max-width:none !important;
+      width: 500px !important;
+      height: auto;
+    } 
+  }
+
+  @media (max-width:550px) {
+    .popupImg {
+      max-width:none !important;
+      width: 400px !important;
+      height: auto;
+    } 
+  }
+  @media (max-width:425px) {
+    .popupImg {
+      max-width:none !important;
+      width: 350px !important;
+      height: auto;
+    } 
+  }
