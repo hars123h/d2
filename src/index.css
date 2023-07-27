@@ -488,12 +488,12 @@ tr{
 .darwinAboutHead {
   margin-left: -35px;
 }
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
+ ul li a,
+ ul li a:after,
+ ul li a:before {
   transition: all .5s;
 }
-nav ul li a:hover {
+ ul li a:hover {
   color: blue;
 }
 

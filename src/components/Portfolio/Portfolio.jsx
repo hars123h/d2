@@ -4,11 +4,11 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "./Popup.css"
 import Image1 from '../../assets/portfolio/web3/image1.png';
-import Image2 from '../../assets/portfolio/web3/image2.jpeg';
-import Image3 from '../../assets/portfolio/web3/image3.jpeg';
-import Image4 from '../../assets/portfolio/web3/image4.jpeg';
-import Image5 from '../../assets/portfolio/web3/image5.jpeg';
-import Image6 from '../../assets/portfolio/web3/image6.jpeg';
+import Image2 from '../../assets/portfolio/web3/image2.png';
+import Image3 from '../../assets/portfolio/web3/image3.png';
+import Image4 from '../../assets/portfolio/web3/image4.png';
+import Image5 from '../../assets/portfolio/web3/image5.png';
+import Image6 from '../../assets/portfolio/web3/image6.png';
 import Web1 from '../../assets/portfolio/web2/image1.jpeg';
 import Web2 from '../../assets/portfolio/web2/image2.jpeg';
 import Web3 from '../../assets/portfolio/web2/image3.jpeg';
