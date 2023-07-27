@@ -25,10 +25,10 @@ export default function Hero() {
             <h1 className=' headText'>Empower.</h1>
             <h1 className=' headText'>Innovate.</h1>
             <h1 className=' headText'> Transform.</h1>
-            <Link to="/what" className='w-[320px] flex items-center justify-between cursor-pointer mt-[40px] text-white bg-black p-5'>
+            <a href="#portfolio" className='w-[320px] flex items-center justify-between cursor-pointer mt-[40px] text-white bg-black p-5 btn-hoverHero'>
                <p >check what we made</p>
                 <RightMark className='bg-white'/>
-            </Link>
+            </a>
             
         </div>
         <div className="absolute right-0 z-0">

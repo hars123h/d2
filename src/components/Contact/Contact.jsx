@@ -85,7 +85,7 @@ export default function Contact() {
                 <input type="text" className="w-[330px]  h-[100px] " />
               </tr>
 
-              <div className="flex items-start justify-end">
+              <div className="flex items-start justify-end btn-hoverHero">
                 <Link
                   to="/what"
                   className="w-[320px] flex items-center justify-between cursor-pointer text-white bg-black p-3 "

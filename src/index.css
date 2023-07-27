@@ -64,8 +64,12 @@ body {
   font-family: 'Zen Kaku Gothic New', sans-serif !important;
 
 }
-
-
+.btn-hoverHero {
+  transition: 1s;
+}
+.btn-hoverHero:hover {
+  transform: scale(1.1);
+}
 .boxIn {
   padding: 24px;
   background-color: white;
