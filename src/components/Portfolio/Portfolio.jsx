@@ -9,6 +9,14 @@ import Image3 from '../../assets/portfolio/web3/image3.jpeg';
 import Image4 from '../../assets/portfolio/web3/image4.jpeg';
 import Image5 from '../../assets/portfolio/web3/image5.jpeg';
 import Image6 from '../../assets/portfolio/web3/image6.jpeg';
+import Web1 from '../../assets/portfolio/web2/image1.jpeg';
+import Web2 from '../../assets/portfolio/web2/image2.jpeg';
+import Web3 from '../../assets/portfolio/web2/image3.jpeg';
+import Web4 from '../../assets/portfolio/web2/image4.jpeg';
+import Web5 from '../../assets/portfolio/web2/image5.jpeg';
+import Web6 from '../../assets/portfolio/web2/image6.jpeg';
+
+
 
 
 
@@ -77,67 +85,73 @@ export default function Portfolio() {
               </div>
               <div
                 className={`boxPort bg-no-repeat bg-center bg-cover`}
-                style={{ background: `url(${URLs[0]})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+                // style={{ background: `url(${Web1})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
                 // className="boxPort bg-[url('https://res.cloudinary.com/doqgoey64/image/upload/v1689932478/portfolio/111111111111111_i3zdzu.png')] bg-no-repeat bg-center bg-cover"
                 onClick={() => {
                   setIsOpen(true);
-                  setOpenedURL(URLs[0]);
+                  setOpenedURL(Web1);
                   console.log(openedURL);
                 }}
               >
+                <img src={Web1} className="portImg" alt="" />
                 <RightMark className="rightIcon  bg-white" />
               </div>
 
               <div className="boxPort "
-                style={{ background: `url(${URLs[1]})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+                // style={{ background: `url(${Web2})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
                 onClick={() => {
                   setIsOpen(true);
-                  setOpenedURL(URLs[1]);
+                  setOpenedURL(Web2);
                   console.log(openedURL);
                 }}
               >
+                <img src={Web2} className="portImg" alt="" />
                 <RightMark className="rightIcon  bg-white" />
               </div>
             </div>
 
             <div className="flex items-center">
               <div className="boxPort "
-                style={{ background: `url(${URLs[2]})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+                // style={{ background: `url(${Web3})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
                 onClick={() => {
                   setIsOpen(true);
-                  setOpenedURL(URLs[2]);
+                  setOpenedURL(Web3);
                   console.log(openedURL);
                 }}>
+                  <img src={Web3} className="portImg" alt="" />
                 <RightMark className="rightIcon  bg-white" />
               </div>
               <div className="boxPort "
-                style={{ background: `url(${URLs[3]})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+                // style={{ background: `url(${Web4})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
                 onClick={() => {
                   setIsOpen(true);
-                  setOpenedURL(URLs[3]);
+                  setOpenedURL(Web4);
                   console.log(openedURL);
                 }}>
+                  <img src={Web4} className="portImg" alt="" />
                 <RightMark className="rightIcon  bg-white" />
               </div>
             </div>
 
             <div className="flex items-center ml-[100px] PortMR">
               <div className="boxPort "
-                style={{ background: `url(${URLs[4]})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+                // style={{ background: `url(${Web5})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
                 onClick={() => {
                   setIsOpen(true);
-                  setOpenedURL(URLs[4]);
+                  setOpenedURL(Web5);
                   console.log(openedURL);
                 }}>
+                  <img src={Web5} className="portImg" alt="" />
                 <RightMark className="rightIcon  bg-white" />
               </div>
               <div className="boxPort "
-                style={{ background: `url(${URLs[5]})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+                 
                 onClick={() => {
                   setIsOpen(true);
-                  setOpenedURL(URLs[5]);
+                  setOpenedURL(Web6);
                   console.log(openedURL);
                 }}>
+                  <img src={Web6} className="portImg" alt="" />
                 <RightMark className="rightIcon  bg-white" />
               </div>
             </div>
@@ -148,67 +162,79 @@ export default function Portfolio() {
                 <h1 className="text-[48px]">Web3.0</h1>
               </div>
               <div className="boxPort"
-              style={{ background: `url(${Image1})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+              // style={{ background: `url(${Image1})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
               onClick={() => {
                 setIsOpen(true);
                 setOpenedURL(Image1);
                 console.log(openedURL);
               }}
               >
+                <img src={Image1} className="portImg" alt="" />
+                
                 <RightMark className="rightIcon  bg-white" />
               </div>
               <div className="boxPort "
-              style={{ background: `url(${Image2})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+              // style={{ background: `url(${Image2})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
               onClick={() => {
                 setIsOpen(true);
                 setOpenedURL(Image2);
                 console.log(openedURL);
               }}
               >
+                <img src={Image2} className="portImg" alt="" />
+
                 <RightMark className="rightIcon  bg-white" />
               </div>
             </div>
             <div className="flex items-center ">
               <div className="boxPort "
-              style={{ background: `url(${Image3})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+              // style={{ background: `url(${Image3})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
               onClick={() => {
                 setIsOpen(true);
                 setOpenedURL(Image3);
                 console.log(openedURL);
               }}
               >
+                <img src={Image3} className="portImg" alt="" />
+
                 <RightMark className="rightIcon  bg-white" />
               </div>
               <div className="boxPort "
               
-              style={{ background: `url(${Image4})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+              // style={{ background: `url(${Image4})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
               onClick={() => {
                 setIsOpen(true);
                 setOpenedURL(Image4);
                 console.log(openedURL);
               }}>
+                <img src={Image4} className="portImg" alt="" />
+
                 <RightMark className="rightIcon  bg-white" />
               </div>
             </div>
             <div className="flex items-center ml-[100px] PortMR">
               <div className="boxPort "
-              style={{ background: `url(${Image5})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+              // style={{ background: `url(${Image5})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
               onClick={() => {
                 setIsOpen(true);
                 setOpenedURL(Image5);
                 console.log(openedURL);
               }}
               >
+                <img src={Image5} className="portImg" alt="" />
+
                 <RightMark className="rightIcon  bg-white" />
               </div>
               <div className="boxPort "
-              style={{ background: `url(${Image6})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+              // style={{ background: `url(${Image6})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
               onClick={() => {
                 setIsOpen(true);
                 setOpenedURL(Image6);
                 console.log(openedURL);
               }}
               >
+                <img src={Image6} className="portImg" alt="" />
+
                 <RightMark className="rightIcon  bg-white" />
               </div>
             </div>

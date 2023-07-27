@@ -92,14 +92,17 @@ body {
 
 .boxPort{
   width: 350px;
-  height: 150px;
-  padding: 16px;
+  padding: 1px;
   background-color: white;
   color: black;
   border: 2px solid #000000;
   display: flex;
   align-items: flex-end;
   justify-items:flex-end;
+}
+.portImg {
+  width: 100%;
+  height: auto;
 }
 
 .boxPort .rightIcon{
