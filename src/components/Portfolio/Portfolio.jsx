@@ -158,7 +158,7 @@ export default function Portfolio() {
                 <RightMark className="rightIcon  bg-white" />
               </div>
               <div className="boxPort "
-              style={{ background: `url(${Image2})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'contain' }}
+              style={{ background: `url(${Image2})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
               onClick={() => {
                 setIsOpen(true);
                 setOpenedURL(Image2);
@@ -225,7 +225,8 @@ export default function Portfolio() {
         // later we will be adding url dynamically- hard coded for now
 
         <div className={`popup-content rounded-xl`}
-          style={{ background: `url(${openedURL})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}>
+         >
+            <img src={openedURL} className="popupImg" alt="" />
           {/* <div className="popup-content rounded-xl bg-[url('https://res.cloudinary.com/doqgoey64/image/upload/v1689932478/portfolio/111111111111111_i3zdzu.png')] bg-no-repeat bg-center bg-cover"> */}
           <span onClick={() => { setIsOpen(false); setOpenedURL('') }} className="close-icon">
             &times;
