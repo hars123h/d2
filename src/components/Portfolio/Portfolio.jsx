@@ -3,6 +3,15 @@ import { GreenPort } from "../../assets";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./Popup.css"
+import Image1 from '../../assets/portfolio/web3/image1.png';
+import Image2 from '../../assets/portfolio/web3/image2.jpeg';
+import Image3 from '../../assets/portfolio/web3/image3.jpeg';
+import Image4 from '../../assets/portfolio/web3/image4.jpeg';
+import Image5 from '../../assets/portfolio/web3/image5.jpeg';
+import Image6 from '../../assets/portfolio/web3/image6.jpeg';
+
+
+
 
 function RightMark() {
   return (
@@ -44,11 +53,14 @@ export default function Portfolio() {
     'https://res.cloudinary.com/doqgoey64/image/upload/v1689948934/darwin/55555555555_cb5ern.png',
     'https://res.cloudinary.com/doqgoey64/image/upload/v1689948934/darwin/66666666666666_upin3f.png',
   ]
+  const URLs2 = [
+
+  ]
 
   return (
     <>
       {/* <div className="flex flex-col w-full max-w-7xl  static my-[200px] z-20"> */}
-      <div className={`flex flex-col w-full max-w-7xl  static my-[20px] z-20 ${isOpen? 'blur-sm': ''} mx-auto`} id="portfolio">
+      <div className={`flex flex-col w-full max-w-7xl  static my-[20px] z-20 ${isOpen ? 'blur-sm' : ''} mx-auto`} id="portfolio">
         <div className="mx-[100px] z-10 PortInside">
           <div className=" boxHead  z-10 " data-aos="fade-down">
             <h1 className="mb-5">WHAT WE CREATED</h1>
@@ -65,7 +77,7 @@ export default function Portfolio() {
               </div>
               <div
                 className={`boxPort bg-no-repeat bg-center bg-cover`}
-              style={{background: `url(${URLs[0]})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center',backgroundSize: 'cover'}}
+                style={{ background: `url(${URLs[0]})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
                 // className="boxPort bg-[url('https://res.cloudinary.com/doqgoey64/image/upload/v1689932478/portfolio/111111111111111_i3zdzu.png')] bg-no-repeat bg-center bg-cover"
                 onClick={() => {
                   setIsOpen(true);
@@ -75,9 +87,9 @@ export default function Portfolio() {
               >
                 <RightMark className="rightIcon  bg-white" />
               </div>
-              
+
               <div className="boxPort "
-                style={{background: `url(${URLs[1]})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center',backgroundSize: 'cover'}}
+                style={{ background: `url(${URLs[1]})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
                 onClick={() => {
                   setIsOpen(true);
                   setOpenedURL(URLs[1]);
@@ -90,42 +102,42 @@ export default function Portfolio() {
 
             <div className="flex items-center">
               <div className="boxPort "
-              style={{background: `url(${URLs[2]})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center',backgroundSize: 'cover'}}
-              onClick={() => {
-                setIsOpen(true);
-                setOpenedURL(URLs[2]);
-                console.log(openedURL);
-              }}>
+                style={{ background: `url(${URLs[2]})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+                onClick={() => {
+                  setIsOpen(true);
+                  setOpenedURL(URLs[2]);
+                  console.log(openedURL);
+                }}>
                 <RightMark className="rightIcon  bg-white" />
               </div>
               <div className="boxPort "
-              style={{background: `url(${URLs[3]})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center',backgroundSize: 'cover'}}
-              onClick={() => {
-                setIsOpen(true);
-                setOpenedURL(URLs[3]);
-                console.log(openedURL);
-              }}>
+                style={{ background: `url(${URLs[3]})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+                onClick={() => {
+                  setIsOpen(true);
+                  setOpenedURL(URLs[3]);
+                  console.log(openedURL);
+                }}>
                 <RightMark className="rightIcon  bg-white" />
               </div>
             </div>
 
             <div className="flex items-center ml-[100px] PortMR">
               <div className="boxPort "
-              style={{background: `url(${URLs[4]})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center',backgroundSize: 'cover'}}
-              onClick={() => {
-                setIsOpen(true);
-                setOpenedURL(URLs[4]);
-                console.log(openedURL);
-              }}>
+                style={{ background: `url(${URLs[4]})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+                onClick={() => {
+                  setIsOpen(true);
+                  setOpenedURL(URLs[4]);
+                  console.log(openedURL);
+                }}>
                 <RightMark className="rightIcon  bg-white" />
               </div>
               <div className="boxPort "
-              style={{background: `url(${URLs[5]})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center',backgroundSize: 'cover'}}
-              onClick={() => {
-                setIsOpen(true);
-                setOpenedURL(URLs[5]);
-                console.log(openedURL);
-              }}>
+                style={{ background: `url(${URLs[5]})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+                onClick={() => {
+                  setIsOpen(true);
+                  setOpenedURL(URLs[5]);
+                  console.log(openedURL);
+                }}>
                 <RightMark className="rightIcon  bg-white" />
               </div>
             </div>
@@ -135,26 +147,68 @@ export default function Portfolio() {
               <div className="boxHead w-[400px] ">
                 <h1 className="text-[48px]">Web3.0</h1>
               </div>
-              <div className="boxPort ">
+              <div className="boxPort"
+              style={{ background: `url(${Image1})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+              onClick={() => {
+                setIsOpen(true);
+                setOpenedURL(Image1);
+                console.log(openedURL);
+              }}
+              >
                 <RightMark className="rightIcon  bg-white" />
               </div>
-              <div className="boxPort ">
+              <div className="boxPort "
+              style={{ background: `url(${Image2})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'contain' }}
+              onClick={() => {
+                setIsOpen(true);
+                setOpenedURL(Image2);
+                console.log(openedURL);
+              }}
+              >
                 <RightMark className="rightIcon  bg-white" />
               </div>
             </div>
             <div className="flex items-center ">
-              <div className="boxPort ">
+              <div className="boxPort "
+              style={{ background: `url(${Image3})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+              onClick={() => {
+                setIsOpen(true);
+                setOpenedURL(Image3);
+                console.log(openedURL);
+              }}
+              >
                 <RightMark className="rightIcon  bg-white" />
               </div>
-              <div className="boxPort ">
+              <div className="boxPort "
+              
+              style={{ background: `url(${Image4})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+              onClick={() => {
+                setIsOpen(true);
+                setOpenedURL(Image4);
+                console.log(openedURL);
+              }}>
                 <RightMark className="rightIcon  bg-white" />
               </div>
             </div>
             <div className="flex items-center ml-[100px] PortMR">
-              <div className="boxPort ">
+              <div className="boxPort "
+              style={{ background: `url(${Image5})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+              onClick={() => {
+                setIsOpen(true);
+                setOpenedURL(Image5);
+                console.log(openedURL);
+              }}
+              >
                 <RightMark className="rightIcon  bg-white" />
               </div>
-              <div className="boxPort ">
+              <div className="boxPort "
+              style={{ background: `url(${Image6})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+              onClick={() => {
+                setIsOpen(true);
+                setOpenedURL(Image6);
+                console.log(openedURL);
+              }}
+              >
                 <RightMark className="rightIcon  bg-white" />
               </div>
             </div>
@@ -163,23 +217,23 @@ export default function Portfolio() {
         <div className="absolute left-0 z-0 ">
           <img src={GreenPort} alt="no img" className="w-[800px] h-auto" />
         </div>
-        
+
       </div>
 
-        
+
       {isOpen && (
         // later we will be adding url dynamically- hard coded for now
 
         <div className={`popup-content rounded-xl`}
-        style={{background: `url(${openedURL})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center',backgroundSize: 'cover'}}>
-         {/* <div className="popup-content rounded-xl bg-[url('https://res.cloudinary.com/doqgoey64/image/upload/v1689932478/portfolio/111111111111111_i3zdzu.png')] bg-no-repeat bg-center bg-cover"> */}
-          <span onClick={() => {setIsOpen(false); setOpenedURL('')}} className="close-icon">
+          style={{ background: `url(${openedURL})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}>
+          {/* <div className="popup-content rounded-xl bg-[url('https://res.cloudinary.com/doqgoey64/image/upload/v1689932478/portfolio/111111111111111_i3zdzu.png')] bg-no-repeat bg-center bg-cover"> */}
+          <span onClick={() => { setIsOpen(false); setOpenedURL('') }} className="close-icon">
             &times;
           </span>
         </div>
       )}
-      
-      
+
+
     </>
   );
 }
