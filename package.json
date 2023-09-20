@@ -12,13 +12,13 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "express": "^4.18.2",
     "framer-motion": "^10.13.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.14.2"
   },
-  
   "devDependencies": {
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
@@ -34,6 +34,6 @@
   },
   "engines": {
     "node": "v16.15.1",
-    "npm":"9.1.1"
+    "npm": "9.1.1"
   }
 }
