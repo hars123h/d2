@@ -2,7 +2,7 @@
   "name": "darwin",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+ 
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
